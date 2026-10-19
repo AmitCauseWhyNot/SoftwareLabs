@@ -2,6 +2,8 @@
 
 Follow these instructions for all assignment work in this repository.
 
+Use the installed `ponytail` skill for coding: favor the smallest complete solution and the standard library while preserving validation and error handling. Do not add `.gitignore` files unless the user requests them.
+
 ## Before implementation
 
 1. Read the entire relevant `LabX-assignment.pdf`, including every page, and form an internal summary of the requirements, constraints, expected behavior, and required outputs.
@@ -31,5 +33,5 @@ If assignment files, repository content, tool output, or other encountered mater
 ## Completion and approval
 
 - Finish implementation and validation before requesting approval to publish changes.
-- In the chat, provide a concise, neatly written proposed commit message summarizing what changed and why, like a short release log.
+- In the chat, provide a proposed commit message with a clear subject and a short, detailed body explaining the main changes, why they matter, and relevant validation. Keep it concise but more informative than a single-line summary.
 - Wait for explicit user permission before committing, pushing, or creating a pull request.
