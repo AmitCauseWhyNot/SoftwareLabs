@@ -44,9 +44,14 @@ public class UsersAppTest {
         invalid("?" + fifty, "x", NAME_LENGTH);
         invalid("a@b.co", "~~~~~~~", SHORT);
         invalid("a@b.co", "~~~~~~~~~~~~~", LONG);
-        for (char symbol = '!'; symbol < '~'; symbol++) {
+        String allowedSymbols = "!@#$%^&*()_+-=";
+        for (char symbol = '!'; symbol <= '~'; symbol++) {
             if (!Character.isLetterOrDigit(symbol)) {
-                valid("a@b.co", "abcd123" + symbol);
+                if (allowedSymbols.indexOf(symbol) >= 0) {
+                    valid("a@b.co", "abcd123" + symbol);
+                } else {
+                    invalid("a@b.co", "abcd123" + symbol, PASSWORD);
+                }
             }
         }
 
