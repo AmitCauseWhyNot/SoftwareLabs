@@ -10,3 +10,4 @@
 - Rebuilt `UsersApp.java` with both required classes in one file, constructor validation, immutable fields, line-by-line input, an `ArrayList<User>`, and sorted output. Used standard-library patterns for validation instead of a manual character-scanning loop and removed the unused password getter and input helper.
 - Preserved the owner's clarified behavior: all ASCII punctuation except `~` is allowed in passwords, valid users go to standard output, and invalid rows with the assignment's exact error messages go to standard error.
 - Added concise JDK-only run and test instructions, with generated files outside the repository, and prepared a ZIP of the single submission source outside the checkout to avoid adding generated artifacts.
+- Added `.gitignore` rules for `README.md` and `AGENTS.md` at any directory level and stopped tracking the existing matching files while preserving their local copies, so documentation and agent instructions remain local.
