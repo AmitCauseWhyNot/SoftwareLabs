@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="lab2.LoginController" alignment="CENTER_LEFT" spacing="10"
+      prefWidth="460" prefHeight="380"
+      style="-fx-padding: 28; -fx-background-color: white; -fx-font-family: 'Segoe UI';">
+    <Label text="GCM Login" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #17324d;"/>
+    <Label text="Username"/>
+    <TextField fx:id="usernameField" promptText="Email address" accessibleText="Username"
+               maxWidth="Infinity"/>
+    <Label text="Password"/>
+    <PasswordField fx:id="passwordField" promptText="Password" accessibleText="Password"
+                   maxWidth="Infinity"/>
+    <Label fx:id="messageLabel" text="" wrapText="true" minHeight="38" maxWidth="Infinity"
+           style="-fx-text-fill: #b42318;"/>
+    <Button fx:id="loginButton" text="Login" defaultButton="true" onAction="#login"
+            maxWidth="Infinity"
+            style="-fx-background-color: #215d85; -fx-text-fill: white; -fx-font-size: 14; -fx-padding: 8;"/>
+</VBox>
