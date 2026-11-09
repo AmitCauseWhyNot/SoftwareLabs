@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab3.LoginController"
+      spacing="11" prefWidth="560" prefHeight="490"
+      style="-fx-background-color: white; -fx-font-family: 'Segoe UI'; -fx-font-size: 14;">
+    <padding><Insets top="27" right="28" bottom="27" left="28"/></padding>
+    <Label text="GCM Login" style="-fx-font-size: 26; -fx-font-weight: bold; -fx-text-fill: #172d44;"/>
+    <Label text="Username"/>
+    <TextField fx:id="usernameField" promptText="Email address" accessibleText="Username"/>
+    <Label text="Password"/>
+    <PasswordField fx:id="passwordField" promptText="Password" accessibleText="Password"/>
+    <Label fx:id="messageLabel" text="" wrapText="true" minHeight="43"
+           style="-fx-text-fill: #b3261e;"/>
+    <Button fx:id="loginButton" text="Login" onAction="#login" defaultButton="true" maxWidth="Infinity"
+            style="-fx-background-color: #215d85; -fx-text-fill: white; -fx-padding: 8;"/>
+    <Button fx:id="checkButton" text="בדיקת סנכרון - 20 חוטים" onAction="#checkSynchronization"/>
+    <Label fx:id="checkResult" text="" wrapText="true" minHeight="55" style="-fx-font-size: 12;"/>
+</VBox>
