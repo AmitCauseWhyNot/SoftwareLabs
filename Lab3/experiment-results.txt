@@ -1,0 +1,12 @@
+20 threads x 499 failures; then 19 failures; then the blocking 20th.
+Synchronized production code:
+PASS | 20 x 499 = 9980 | +19 = 9999 | blocked early: false | +20 blocked: true
+
+Same source copy with synchronized removed from UserState for the experiment only:
+FAIL | 20 x 499 = 3547 | +19 = 3566 | blocked early: false | +20 blocked: false
+FAIL | 20 x 499 = 3690 | +19 = 3709 | blocked early: false | +20 blocked: false
+FAIL | 20 x 499 = 4478 | +19 = 4497 | blocked early: false | +20 blocked: false
+FAIL | 20 x 499 = 3850 | +19 = 3869 | blocked early: false | +20 blocked: false
+FAIL | 20 x 499 = 4146 | +19 = 4165 | blocked early: false | +20 blocked: false
+
+Production UserState retains synchronized on every method.
