@@ -23,3 +23,6 @@
 
 - Removed the Lab1 and Lab2 directories from the shared main working tree after verifying that their exact current snapshots are preserved on the corresponding lab branches. This prepares main as the starting point for independent future labs without changing assignment code or rewriting history.
 - Added BRANCHES.md with the branch layout, switching commands, and instructions for starting each new lab from main. Used a separate tracked document because the existing ignore rules exclude README.md.
+
+- Added the Lab 5 inventory schema, sample data and 17 SQL queries. The archive test checks all query result sizes, tied order counts, the date boundary and repeat purchases.
+- Returned full customer records in query 8 and named the city totals in query 15 to match the course tester. All 21 checks passed against MySQL.
