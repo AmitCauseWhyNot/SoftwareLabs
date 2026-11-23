@@ -8,6 +8,8 @@ documentation and configuration; lab branches retain their `LabN/` directory.
 | `main` | Shared documentation and configuration |
 | `lab1` | Lab 1 assignment, input/output samples, Java source, and tests |
 | `lab2` | Lab 2 assignment, input sample, Maven project, JavaFX views, and tests |
+| `lab3` | Threaded JavaFX login and per-account blocking |
+| `lab4` | EventPlanner login use case, acceptance-test design, and course materials |
 
 Commit your current work before switching branches:
 
